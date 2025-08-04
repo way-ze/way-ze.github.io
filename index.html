@@ -6,89 +6,54 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Wayne Zeng's Personal Page</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box
-        }
-
-        body {
-            font: 16px/1.6 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
-            max-width: 650px;
-            margin: 2em auto;
-            padding: 0 2em;
-            color: #333
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: .5em;
-            color: #2c3e50
-        }
-
-        h2 {
-            font-size: 1.3em;
-            margin: 1.5em 0 .5em;
-            color: #34495e;
-            border-bottom: 1px solid #eee;
-            padding-bottom: .2em
-        }
-
-        p {
-            margin-bottom: 1em
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none
-        }
-
-        a:hover {
-            text-decoration: underline
-        }
-
-        .contact {
-            background: #f8f9fa;
-            padding: 1em;
-            border-radius: 4px;
-            margin: 1em 0
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: .5em;
-            margin: .5em 0
-        }
-
-        .skill {
-            background: #e9ecef;
-            padding: .2em .5em;
-            border-radius: 3px;
-            font-size: .9em
-        }
-
-        ul {
-            margin-left: 1.5em;
-            margin-bottom: 1em
-        }
-
-        li {
-            margin-bottom: .3em
-        }
-
-        @media(max-width:600px) {
-            body {
-                padding: 0 1.5em;
-                margin: 1em auto
-            }
-        }
-    </style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font:16px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  max-width:600px;margin:3em auto;padding:0 2em;color:#000;
+  background:#fff
+}
+h1{
+  font-size:2.5em;font-weight:300;letter-spacing:-.02em;
+  margin-bottom:.2em;color:#000
+}
+.subtitle{
+  font-size:1em;font-weight:400;color:#666;
+  margin-bottom:3em;text-transform:uppercase;letter-spacing:.1em
+}
+h2{
+  font-size:1.1em;font-weight:700;margin:2.5em 0 1em;
+  color:#000;text-transform:uppercase;letter-spacing:.05em
+}
+p{margin-bottom:1.2em;line-height:1.5}
+a{color:#000;text-decoration:underline}
+a:hover{text-decoration:none}
+.contact{
+  border-top:1px solid #000;border-bottom:1px solid #000;
+  padding:1.5em 0;margin:2em 0;font-weight:500
+}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.5em;margin:1em 0}
+.skill{
+  border:1px solid #000;padding:.5em;text-align:center;
+  font-weight:500;text-transform:uppercase;font-size:.85em
+}
+ul{list-style:none;margin:1em 0}
+li{
+  border-bottom:1px solid #eee;padding:.8em 0;
+  display:flex;justify-content:space-between;align-items:baseline
+}
+li:last-child{border-bottom:none}
+strong{font-weight:700}
+@media(max-width:600px){
+  body{padding:0 1.5em;margin:2em auto}
+  .skills{grid-template-columns:1fr 1fr}
+}
+</style>
 </head>
 
 <body>
 
     <h1>Wayne Zeng</h1>
+    <p style="subtitle">he/him • Basel, Switzerland</p>
     <p>PhD candidate at the University of Basel. Mathematician with expertise in Python, R, and
         statistical modeling. Currently exploring machine learning applications in cardiology.</p>
 
@@ -109,7 +74,7 @@
 
     <h2>Projects</h2>
     <ul>
-        <li><strong>Project Name:</strong> Coming Soon!</li>
+        <li>Coming Soon!</li>
     </ul>
 
     <h2>Background</h2>
@@ -119,7 +84,7 @@
     <h2>Current Focus</h2>
     <p>Interested in time series analysis, explainable AI</p>
 
-    <p><em>Last updated: 34th August 2025</em></p>
+    <p><em>Last updated: 4th August 2025</em></p>
 
 </body>
 
